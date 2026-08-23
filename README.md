@@ -21,7 +21,7 @@ Create React App writes the production files to `build/`.
 
 This repository is configured for:
 
-`https://avetisyan528.github.io/coffejan/`
+`https://avetisyan528.github.io/coffeejan/`
 
 Deployment is automatic through `.github/workflows/deploy.yml` whenever changes are pushed to `main`.
 
@@ -29,4 +29,4 @@ On GitHub, open **Settings → Pages** and set **Source** to **GitHub Actions**.
 
 The application uses `HashRouter`, so client-side routes work reliably on GitHub Pages, for example:
 
-`https://avetisyan528.github.io/coffejan/#/products`
+`https://avetisyan528.github.io/coffeejan/#/products`
