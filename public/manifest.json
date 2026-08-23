@@ -1,6 +1,6 @@
 {
-  "short_name": "Persona Tatarstan",
-  "name": "Official Website for PersonaTat",
+  "short_name": "CoffeeJan",
+  "name": "Official Website for CoffeeJan",
   "icons": [
     {
       "src": "LogoIcon.ico",
@@ -10,7 +10,7 @@
     {
       "src": "LogoIcon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": ".",

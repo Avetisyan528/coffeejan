@@ -6,14 +6,14 @@ import './index.css';
 import App from './App';
 import theme from './theme';
 import {LanguageProvider} from './context/LanguageContext';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import {ProductProvider} from "./context/ProductsContext";
 import {CategoryProvider} from "./context/CategoryContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <LanguageProvider>
                 <CategoryProvider>
                     <ProductProvider>
@@ -24,6 +24,6 @@ root.render(
                     </ProductProvider>
                 </CategoryProvider>
             </LanguageProvider>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );

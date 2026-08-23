@@ -23,7 +23,7 @@ import {useLanguage} from '../../context/LanguageContext';
 import {NAV_LINKS} from '../../types/navigation';
 import {Language, availableLanguages} from '../../types'
 
-import logo from '../../static/LogoTransparent.png';
+import BrandLogo from '../BrandLogo/BrandLogo';
 
 // Flags
 const UK_FLAG_SVG = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><path fill="#012169" d="M0 0h60v30H0z"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>`);
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             >
                 <Toolbar sx={{display: 'flex', alignItems: 'center'}}>
                     <Box component={RouterLink} to="/" sx={{display: 'flex', alignItems: 'center', mr: 2}}>
-                        <Box component="img" src={logo} alt={translations.header.title} sx={{maxHeight: 40}}/>
+                        <BrandLogo compact/>
                     </Box>
 
                     {!isMobile && (

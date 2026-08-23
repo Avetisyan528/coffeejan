@@ -3,7 +3,7 @@ import { Language, Translations } from '../types';
 export const TRANSLATIONS: Record<Language, Translations> = {
     en: {
         header: {
-            title: 'PersonaTat',
+            title: 'CoffeeJan',
             navLabels: {
                 about: 'About Us',
                 contact: 'Contact Us',
@@ -15,7 +15,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
             home: {
                 hero: {
                     title: 'Crafted Coffee Experiences',
-                    subtitle: 'PersonaTat – the taste of professional roasting at home and for business',
+                    subtitle: 'CoffeeJan – the taste of professional roasting at home and for business',
                     description:
                         'Discover unique blends, premium beans, and tailored solutions for HoReCa and vending.',
                     ctas: [
@@ -61,8 +61,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 },
                 brandHighlight: {
                     about: 'About Brand',
-                    titleTop: 'Why Choose PersonaTat?',
-                    titleBottom: 'Why Choose PersonaTat?',
+                    titleTop: 'Why Choose CoffeeJan?',
+                    titleBottom: 'Why Choose CoffeeJan?',
                     description:
                         'We deliver a complete range of coffee products for home, business, and special occasions.',
                     bullets: [
@@ -88,12 +88,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     title: 'Ready to taste true coffee?',
                     description:
                         'Contact us to receive the full product catalog or schedule a consultation.',
-                    subtitle: 'Start with PersonaTat today',
+                    subtitle: 'Start with CoffeeJan today',
                     details: [
                         'We work with private customers and businesses across Russia.',
                         'Nationwide delivery.',
                         '8 800 600 5635',
-                        'info@personatat.com',
+                        'info@coffeejan.com',
                         'Naberezhnye Chelny',
                     ],
                     buttons: [
@@ -109,7 +109,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 hero: {
                     titlePart1: 'Crafted with Passion,',
                     titlePart2Highlight: 'Rooted in Tradition',
-                    subtitle: 'At Persona Tatarstan, we blend centuries-old coffee traditions with modern artisanal techniques.',
+                    subtitle: 'At CoffeeJan, we blend centuries-old coffee traditions with modern artisanal techniques.',
                     description: "Our journey began with a simple mission: to bring the world's finest coffee to discerning enthusiasts while honoring the rich cultural legacy of Tatarstan.",
                 },
 
@@ -121,7 +121,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 storyAndFacts: {
                     storyTitle: 'Our Journey',
                     paragraph1: "Founded in the heart of Tatarstan, our brand represents a commitment to excellence that spans continents. We source the finest beans from renowned coffee-growing regions worldwide, bringing them back to our roastery where tradition meets innovation.",
-                    paragraph2: "Every batch is carefully roasted to perfection, preserving the unique flavor profiles that make each origin special. From the first crack to the final cooling, our master roasters ensure that every bean embodies the premium quality Persona Tatarstan is known for.",
+                    paragraph2: "Every batch is carefully roasted to perfection, preserving the unique flavor profiles that make each origin special. From the first crack to the final cooling, our master roasters ensure that every bean embodies the premium quality CoffeeJan is known for.",
                     quote: "We don't just roast coffee—we craft experiences that connect people, cultures, and moments of joy in every cup.",
                     fact1: {
                         value: '6+',
@@ -206,7 +206,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                             title: 'Instant & Stick Products',
                             details: '3-in-1 coffee mixes, instant tea, and hot chocolate',
                         },
-                        slug: 'persona-3in1-strong'
+                        slug: 'coffeejan-3in1-strong'
                     },*/
                 ],
             },
@@ -233,7 +233,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     description: 'You can also reach us directly via the following channels.',
                     email: {
                         title: 'Email Support',
-                        value: 'info@personatat.com',
+                        value: 'info@coffeejan.com',
                     },
                     phone: {
                         title: 'Call Us (Toll-Free)',
@@ -281,7 +281,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 assorted: 'Assorted Packs',
             },
 
-            rights: '© PersonaTat. All rights reserved.',
+            rights: '© CoffeeJan. All rights reserved.',
         },
     },
     ru: {
@@ -298,7 +298,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
             home: {
                 hero: {
                     title: 'Кофе, созданный профессионалами',
-                    subtitle: 'PersonaTat — вкус обжарки премиум-класса для дома и бизнеса',
+                    subtitle: 'CoffeeJan — вкус обжарки премиум-класса для дома и бизнеса',
                     description: 'Уникальные бленды, отборные зерна и решения для HoReCa и вендинга.',
                     ctas: [
                         {id: 'cta-products', label: 'Перейти к продукции', path: '/products'},
@@ -369,12 +369,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 finalCta: {
                     title: 'Готовы попробовать настоящий кофе?',
                     description: 'Свяжитесь с нами для получения каталога продукции или консультации.',
-                    subtitle: 'Начните с PersonaTat сегодня',
+                    subtitle: 'Начните с CoffeeJan сегодня',
                     details: [
                         'Работаем с частными клиентами и бизнесом по всей России.',
                         'Доставка по РФ.',
                         '8 800 600 5635',
-                        'info@personatat.com',
+                        'info@coffeejan.com',
                         'г. Набережные Челны',
                     ],
                     buttons: [
@@ -389,7 +389,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 hero: {
                     titlePart1: 'Создано с любовью,',
                     titlePart2Highlight: 'С корнями в Традиции',
-                    subtitle: 'В Persona Tatarstan мы сочетаем многовековые кофейные традиции с современными ремесленными техниками.',
+                    subtitle: 'В CoffeeJan мы сочетаем многовековые кофейные традиции с современными ремесленными техниками.',
                     description: 'Наш путь начался с простой миссии: донести лучший в мире кофе до взыскательных ценителей, почитая при этом богатое культурное наследие Татарстана.'
                 },
                 imageCallout: {
@@ -399,7 +399,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 storyAndFacts: {
                     storyTitle: 'Наша История',
                     paragraph1: 'Основанный в самом сердце Татарстана, наш бренд олицетворяет приверженность к совершенству, охватывающую континенты. Мы закупаем лучшие зерна из известных регионов мира, выращивающих кофе, привозя их обратно в нашу обжарочную, где традиции встречаются с инновациями.',
-                    paragraph2: 'Каждая партия тщательно обжаривается до совершенства, сохраняя уникальные вкусовые профили, которые делают каждый сорт особенным. От первого потрескивания до финального охлаждения наши мастера-обжарщики гарантируют, что каждое зерно воплощает премиальное качество, которым славится Persona Tatarstan.',
+                    paragraph2: 'Каждая партия тщательно обжаривается до совершенства, сохраняя уникальные вкусовые профили, которые делают каждый сорт особенным. От первого потрескивания до финального охлаждения наши мастера-обжарщики гарантируют, что каждое зерно воплощает премиальное качество, которым славится CoffeeJan.',
                     quote: 'Мы не просто обжариваем кофе — мы создаем впечатления, которые объединяют людей, культуры и моменты радости в каждой чашке.',
                     fact1: {
                         value: '6+',
@@ -493,7 +493,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     description: 'Вы также можете связаться с нами напрямую по следующим каналам.',
                     email: {
                         title: 'Техническая поддержка',
-                        value: 'info@personatat.com',
+                        value: 'info@coffeejan.com',
                     },
                     phone: {
                         title: 'Позвоните нам (Бесплатно)',
@@ -542,12 +542,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 assorted: 'Ассорти наборы',
             },
 
-            rights: '© PersonaTat. Все права защищены.',
+            rights: '© CoffeeJan. Все права защищены.',
         },
     },
     tt: {
         header: {
-            title: 'PersonaTat',
+            title: 'CoffeeJan',
             navLabels: {
                 about: 'Безнең турында',
                 contact: 'Бәйләнеш',
@@ -559,7 +559,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
             home: {
                 hero: {
                     title: 'Һөнәри кофе тәҗрибәсе',
-                    subtitle: 'PersonaTat — өй һәм бизнес өчен югары сыйфатлы кыздырылган кофе',
+                    subtitle: 'CoffeeJan — өй һәм бизнес өчен югары сыйфатлы кыздырылган кофе',
                     description:
                         'Уникаль блендлар, сайланган бөртекләр һәм HoReCa белән вендинг өчен чишелешләр.',
                     ctas: [
@@ -632,12 +632,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     title: 'Чын кофены татып карарга әзерме?',
                     description:
                         'Продукция каталогын алу яки консультация өчен безгә мөрәжәгать итегез.',
-                    subtitle: 'PersonaTat белән бүген үк башлагыз',
+                    subtitle: 'CoffeeJan белән бүген үк башлагыз',
                     details: [
                         'Россия буенча шәхси клиентлар һәм бизнес белән эшлибез.',
                         'ТР буенча һәм РФ буенча җибәрү.',
                         '8 800 600 5635',
-                        'info@personatat.com',
+                        'info@coffeejan.com',
                         'Набережные Челны шәһәре',
                     ],
                     buttons: [
@@ -652,7 +652,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 hero: {
                     titlePart1: 'Дәрт белән Ясалган,',
                     titlePart2Highlight: 'Традициягә Таянган',
-                    subtitle: "Persona Tatarstan'да без гасырлык кофе традицияләрен заманча осталык техникалары белән кушабыз.",
+                    subtitle: "CoffeeJan'да без гасырлык кофе традицияләрен заманча осталык техникалары белән кушабыз.",
                     description: "Безнең юлыбыз гади миссиядән башланды: Татарстанның бай мәдәни мирасын хөрмәт итеп, дөньяның иң яхшы кофесын таләпчән кофе яратучыларга җиткерү."
                 },
                 imageCallout: {
@@ -662,7 +662,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 storyAndFacts: {
                     storyTitle: 'Безнең Юлыбыз',
                     paragraph1: 'Татарстанның үзәгендә оешкан безнең бренд континентларны колачлаган камиллеккә омтылуны чагылдыра. Без дөньяның танылган кофе үстерү төбәкләреннән иң яхшы бөртекләрне алып кайтабыз, аларны традиция инновацияләр белән очрашкан обжарка йортыбызга китерәбез.',
-                    paragraph2: 'Һәр партия камиллеккә ирешкәнче җентекләп обжаркалана, һәр чыгышны үзенчәлекле иткән уникаль тәм профильләре саклана. Беренче ярылудан алып соңгы суытуга кадәр, безнең мастер-обжаркачылар һәр бөртекнең Persona Tatarstan танылган премиум сыйфатын гәүдәләндерүен тәэмин итә.',
+                    paragraph2: 'Һәр партия камиллеккә ирешкәнче җентекләп обжаркалана, һәр чыгышны үзенчәлекле иткән уникаль тәм профильләре саклана. Беренче ярылудан алып соңгы суытуга кадәр, безнең мастер-обжаркачылар һәр бөртекнең CoffeeJan танылган премиум сыйфатын гәүдәләндерүен тәэмин итә.',
                     quote: 'Без бары тик кофе гына обжаркаламыйбыз — без һәр чынаякта кешеләрне, мәдәниятләрне һәм шатлык мизгелләрен бәйләүче тәҗрибәләр тудырабыз.',
                     fact1: {
                         value: '6+',
@@ -756,7 +756,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     description: 'Сез безнең белән түбәндәге каналлар аша да элемтәгә керә аласыз.',
                     email: {
                         title: 'Электрон почта ярдәме',
-                        value: 'info@personatat.com',
+                        value: 'info@coffeejan.com',
                     },
                     phone: {
                         title: 'Безгә шалтыратыгыз (бушлай)',
@@ -805,7 +805,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 assorted: 'Катнаш пакетлар',
             },
 
-            rights: '© PersonaTat. Бөтен хокуклар сакланган.',
+            rights: '© CoffeeJan. Бөтен хокуклар сакланган.',
         },
     },
 };

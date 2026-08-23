@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Box, Divider, Typography} from '@mui/material';
 import {Link as RouterLink} from 'react-router-dom';
 import {useLanguage} from '../../context/LanguageContext';
-import logo from "../../static/LogoTransparent.png";
+import BrandLogo from '../BrandLogo/BrandLogo';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -10,9 +10,9 @@ import {useTheme} from '@mui/material/styles';
 import {FOOTER_LINKS} from '../../types/navigation';
 
 const socialLinks = [
-    {icon: InstagramIcon, url: "https://instagram.com/personatat"},
+    {icon: InstagramIcon, url: "https://instagram.com/coffeejan"},
     {icon: FacebookIcon, url: "https://www.facebook.com/profile.php?id=61583886507459"},
-    {icon: YouTubeIcon, url: "https://youtube.com/personatat"},
+    {icon: YouTubeIcon, url: "https://youtube.com/coffeejan"},
 ];
 
 const Footer: React.FC = () => {
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                         to="/"
                         sx={{display: 'inline-block'}}
                     >
-                        <Box component="img" src={logo} alt={translations.header.title} sx={{maxHeight: 40}}/>
+                        <BrandLogo/>
                     </Box>
                     <Typography variant="body1" sx={{
                         color: theme.palette.primary.light, my: 2

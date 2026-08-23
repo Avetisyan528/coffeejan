@@ -1,8 +1,8 @@
 {
-  "name": "personatat",
+  "name": "coffejan",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://personatat.com",
+  "homepage": "https://avetisyan528.github.io/coffejan",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
