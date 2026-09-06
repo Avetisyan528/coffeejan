@@ -7,12 +7,12 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         title: {
             en: 'Coffee Beans',
             ru: 'Кофейные зерна',
-            tt: 'Кофе бөртекләре',
+            hy: "Հատիկավոր սուրճ",
         },
         details: {
             en: 'Premium roasted beans',
             ru: 'Премиальные обжаренные зерна',
-            tt: 'Премиум кыздырылган бөртекләр',
+            hy: "Բարձրորակ բոված հատիկներ",
         },
     },
     {
@@ -21,12 +21,12 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         title: {
             en: 'Coffee Sticks',
             ru: 'Кофейные стики',
-            tt: 'Кофе стиклары',
+            hy: "Սուրճի փաթեթներ",
         },
         details: {
             en: 'Convenient ready-mix instant sticks',
             ru: 'Удобные растворимые стики',
-            tt: 'Уңайлы тиз эри торган стиклар',
+            hy: "Հարմար մեկանգամյա փաթեթներով լուծվող խառնուրդներ",
         },
     },
 ];

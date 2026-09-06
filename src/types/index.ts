@@ -6,13 +6,13 @@ import {
     ProductShowcaseTranslations, ProductsPageTranslations
 } from "./translations";
 
-export type Language = 'en' | 'ru' | 'tt';
-export const availableLanguages: Language[] = ['en', 'ru', 'tt'];
+export type Language = 'en' | 'ru' | 'hy';
+export const availableLanguages: Language[] = ['en', 'ru', 'hy'];
 
 export type MultiLangText = {
     en: string;
     ru: string;
-    tt: string;
+    hy: string;
 };
 
 export type Translations = {

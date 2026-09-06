@@ -168,8 +168,8 @@ const Footer: React.FC = () => {
                     {FOOTER_LINKS.contact.map(link => (
                         <Typography
                             key={link.key}
-                            component={RouterLink}
-                            to={link.path}
+                            component="a"
+                            href={link.path.startsWith('/') ? `#${link.path}` : link.path}
                             sx={{
                                 display: 'block',
                                 color: theme.palette.primary.light,

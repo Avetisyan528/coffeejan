@@ -22,6 +22,10 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
                                                                   }) => {
     const [language, setLanguage] = React.useState<Language>(defaultLanguage);
 
+    React.useEffect(() => {
+        document.documentElement.lang = language;
+    }, [language]);
+
     const toggleLanguage = React.useCallback(() => {
         setLanguage((prev) => {
             const currentIndex = availableLanguages.indexOf(prev);

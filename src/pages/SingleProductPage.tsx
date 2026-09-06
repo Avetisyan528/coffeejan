@@ -1,81 +1,35 @@
 import * as React from 'react';
-import {Box, Button, Card, CardContent, CardMedia, Grid, Typography} from '@mui/material';
-import {useLanguage} from "../context/LanguageContext";
-import { Link } from "react-router-dom";
-import {PRODUCT_IMAGES} from "../constants/productImages";
-import { useProducts } from '../context/ProductsContext';
-import {useCategories} from "../context/CategoryContext";
+import {Box, Button, Card, CardContent, CardMedia, Typography} from '@mui/material';
+import {Link, useParams} from 'react-router-dom';
+import {useLanguage} from '../context/LanguageContext';
+import {useProducts} from '../context/ProductsContext';
+import {useCategories} from '../context/CategoryContext';
+import {PRODUCT_IMAGES} from '../constants/productImages';
+import NotFound from './NotFound';
 
 const SingleProductPage: React.FC = () => {
-    const { language } = useLanguage();
+    const {language} = useLanguage();
+    const {categorySlug, productSlug} = useParams();
     const {categories} = useCategories();
-    const { products } = useProducts();
+    const {products} = useProducts();
+    const category = categories.find(item => item.slug === categorySlug);
+    const product = products.find(item => item.slug === productSlug && item.categoryId === category?.id);
+
+    if (!category || !product) return <NotFound />;
 
     return (
-        <Box sx={{maxWidth: 'lg', mx: 'auto', py: 6}}>
-
-            <Box sx={{ mb: 4, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-                {categories.map((cat) => (
-                    <Button
-                        key={cat.id}
-                        component={Link}
-                        to={`/products/${cat.slug}`}
-                        variant="outlined"
-                        color="secondary"
-                    >
-                        {cat.title[language]}
-                    </Button>
-                ))}
-            </Box>
-
-            <Grid container spacing={4}>
-                {products.map((product) => {
-                    const categorySlug = categories.find(c => c.id === product.categoryId)?.slug || '';
-
-                    return (
-                        <Grid size={{md: 4}} key={product.id}>
-                            <Card
-                                component={Link}
-                                to={`/products/${categorySlug}/${product.slug}`}
-                                sx={{
-                                    borderRadius: 3,
-                                    boxShadow: (theme) => `0 0 30px ${theme.palette.secondary.main}66`,
-                                    overflow: 'hidden',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    height: '100%',
-                                    transition: 'transform 0.2s',
-                                    textDecoration: 'none', // remove underline
-                                    '&:hover': { transform: 'scale(1.03)' },
-                                }}
-                            >
-                                <CardMedia
-                                    component="img"
-                                    height="200"
-                                    image={PRODUCT_IMAGES[product.imageKey]}
-                                    alt={product.name[language]}
-                                    sx={{
-                                        objectFit: 'cover',
-                                        borderRadius: 3,
-                                        borderBottomLeftRadius: 0,
-                                        borderBottomRightRadius: 0,
-                                        border: (theme) => `2px solid ${theme.palette.secondary.main}`,
-                                    }}
-                                />
-                                <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
-                                    <Typography variant="h6" gutterBottom>
-                                        {product.name[language]}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" gutterBottom>
-                                        {product.description[language]}
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    );
-                })}
-            </Grid>
-
+        <Box sx={{maxWidth: 900, mx: 'auto', px: 3, py: 6}}>
+            <Button component={Link} to={`/products/${category.slug}`} color="secondary" sx={{mb: 3}}>
+                ← {category.title[language]}
+            </Button>
+            <Card sx={{borderRadius: 3}}>
+                <CardMedia component="img" image={PRODUCT_IMAGES[product.imageKey]} alt={product.name[language]}
+                           sx={{height: {xs: 300, md: 450}, objectFit: 'contain', p: 3}} />
+                <CardContent>
+                    <Typography variant="h4" component="h1" gutterBottom>{product.name[language]}</Typography>
+                    <Typography>{product.description[language]}</Typography>
+                </CardContent>
+            </Card>
         </Box>
     );
 };

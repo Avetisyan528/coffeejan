@@ -1,5 +1,6 @@
+import NotFound from './pages/NotFound';
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 import './App.css';
 import Header from './components/Header/Header';
@@ -27,7 +28,7 @@ function App() {
                     <Route path="/contact" element={<ContactUs />} />
                     <Route path="/analysis" element={<CoffeeMarketAnalysis />} />
                     <Route path="/marketingResearch" element={<BrandDetailSection />} />
-                    <Route path="*" element={<Navigate to="/" replace />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Box>
             <Footer />

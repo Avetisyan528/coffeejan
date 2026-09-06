@@ -1,3 +1,4 @@
+import NotFound from './NotFound';
 import * as React from 'react';
 import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { PRODUCT_IMAGES } from '../constants/productImages';
@@ -26,11 +27,13 @@ const Products: React.FC = () => {
         return Array.from(new Map(filteredProducts.map((p) => [p.id, p])).values());
     }, [filteredProducts]);
 
+    if (!categories.some(category => category.slug === categorySlug)) return <NotFound />;
+
     return (
         <Box sx={{ maxWidth: 'lg', mx: 'auto', py: 6 }}>
             <Box sx={{ mb: 4, px: 4, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                 <Button component={Link} to={`/products`} variant="outlined" color="secondary">
-                    All
+                    {language === 'hy' ? 'Բոլորը' : language === 'ru' ? 'Все' : 'All'}
                 </Button>
 
                 {categories.map((cat) => (

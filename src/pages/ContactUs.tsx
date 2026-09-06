@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
     const navigate = useNavigate();
     const theme = useTheme();
 
-    const { hero, form, info } = translations.pages.contact;
+    const { hero, form, info, extraCta } = translations.pages.contact;
 
     const [formData, setFormData] = React.useState<ContactFormState>({
         name: '',
@@ -365,9 +365,10 @@ const Contact: React.FC = () => {
                                     color="secondary"
                                     size="large"
                                     sx={{ mt: 2, borderRadius: 2 }}
+                                    onClick={() => navigate(extraCta.productsButton.path)}
                                     startIcon={<ShoppingCartIcon />}
                                 >
-                                    Products
+                                    {extraCta.productsButton.label}
                                 </Button>
 
                                 <Button
@@ -375,9 +376,10 @@ const Contact: React.FC = () => {
                                     color="secondary"
                                     size="large"
                                     sx={{ mt: 2, borderRadius: 2 }}
+                                    href={extraCta.callButton.path}
                                     startIcon={<LocalPhoneIcon />}
                                 >
-                                    Call Us
+                                    {extraCta.callButton.label}
                                 </Button>
                             </Box>
                         </Paper>

@@ -21,7 +21,7 @@ const Products: React.FC = () => {
                     variant="contained"
                     color="secondary"
                 >
-                    All
+                    {language === 'hy' ? 'Բոլորը' : language === 'ru' ? 'Все' : 'All'}
                 </Button>
                 {categories.map((cat) => (
                     <Button

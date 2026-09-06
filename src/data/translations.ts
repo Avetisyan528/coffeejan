@@ -1,3 +1,4 @@
+import {ARMENIAN} from './armenian';
 import { Language, Translations } from '../types';
 
 export const TRANSLATIONS: Record<Language, Translations> = {
@@ -93,7 +94,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                         'We work with private customers and businesses across Russia.',
                         'Nationwide delivery.',
                         '8 800 600 5635',
-                        'info@coffeejan.com',
+                        'info@coffeejan.am',
                         'Naberezhnye Chelny',
                     ],
                     buttons: [
@@ -233,7 +234,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     description: 'You can also reach us directly via the following channels.',
                     email: {
                         title: 'Email Support',
-                        value: 'info@coffeejan.com',
+                        value: 'info@coffeejan.am',
                     },
                     phone: {
                         title: 'Call Us (Toll-Free)',
@@ -374,7 +375,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                         'Работаем с частными клиентами и бизнесом по всей России.',
                         'Доставка по РФ.',
                         '8 800 600 5635',
-                        'info@coffeejan.com',
+                        'info@coffeejan.am',
                         'г. Набережные Челны',
                     ],
                     buttons: [
@@ -493,7 +494,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     description: 'Вы также можете связаться с нами напрямую по следующим каналам.',
                     email: {
                         title: 'Техническая поддержка',
-                        value: 'info@coffeejan.com',
+                        value: 'info@coffeejan.am',
                     },
                     phone: {
                         title: 'Позвоните нам (Бесплатно)',
@@ -545,267 +546,5 @@ export const TRANSLATIONS: Record<Language, Translations> = {
             rights: '© CoffeeJan. Все права защищены.',
         },
     },
-    tt: {
-        header: {
-            title: 'CoffeeJan',
-            navLabels: {
-                about: 'Безнең турында',
-                contact: 'Бәйләнеш',
-                products: 'Продукция',
-            },
-            languageToggleLabel: 'Телне алыштыру',
-        },
-        pages: {
-            home: {
-                hero: {
-                    title: 'Һөнәри кофе тәҗрибәсе',
-                    subtitle: 'CoffeeJan — өй һәм бизнес өчен югары сыйфатлы кыздырылган кофе',
-                    description:
-                        'Уникаль блендлар, сайланган бөртекләр һәм HoReCa белән вендинг өчен чишелешләр.',
-                    ctas: [
-                        {id: 'cta-products', label: 'Продукцияне карау', path: '/products'},
-                        {id: 'cta-contact', label: 'Без белән элемтә', path: '/contact'},
-                    ],
-                },
-                productShowcase: {
-                    title: 'Our Products',
-                    categories: [
-                        /*{
-                            id: 'instant-sticks',
-                            title: 'Instant & Stick Products',
-                            details: '3-in-1 coffee mixes, instant tea, and hot chocolate',
-                        },
-                        {
-                            id: 'flavored-ground',
-                            title: 'Flavored Ground Coffee',
-                            details: 'Ground coffee with added flavors for a rich taste',
-                        },
-                        {
-                            id: 'classic-ground',
-                            title: 'Classic Ground Coffee',
-                            details: 'Traditional ground coffee for everyday enjoyment',
-                        },
-                        {
-                            id: 'flavored-beans',
-                            title: 'Flavored Coffee Beans',
-                            details: 'Whole beans with added flavors for a premium aroma',
-                        },
-                        {
-                            id: 'classic-beans',
-                            title: 'Classic Coffee Beans',
-                            details: 'High-quality traditional whole beans',
-                        },
-                        {
-                            id: 'coffee-capsules',
-                            title: 'Coffee Capsules',
-                            details: 'Classic or flavored capsules with varying intensities',
-                        },*/
-                    ],
-                    ctaLabel: 'View All Products',
-                },
-                brandHighlight: {
-                    about: 'О БРЕНДЕ',
-                    titleTop: 'Нигә безне сайлыйлар?',
-                    titleBottom: 'Нигә безне сайлыйлар?',
-                    description:
-                        'Өй, бизнес һәм махсус чаралар өчен тулы кофей продукциясен тәкъдим итәбез.',
-                    bullets: [
-                        {
-                            id: 'bullet-1',
-                            title: 'Киң ассортимент',
-                            description: '50 дән артык исем: стиктан 10 кг бөртеккә кадәр.',
-                        },
-                        {
-                            id: 'bullet-2',
-                            title: 'Сыйфат контроле',
-                            description: 'Бөртек сайлаудан алып упаковкага кадәр тулы контроль.',
-                        },
-                        {
-                            id: 'bullet-3',
-                            title: 'Бизнес өчен',
-                            description: 'Кафе, ресторан һәм вендинг өчен махсус чишелешләр.',
-                        },
-                    ],
-                    ctaLabel: 'Компания турында',
-                },
-                finalCta: {
-                    title: 'Чын кофены татып карарга әзерме?',
-                    description:
-                        'Продукция каталогын алу яки консультация өчен безгә мөрәжәгать итегез.',
-                    subtitle: 'CoffeeJan белән бүген үк башлагыз',
-                    details: [
-                        'Россия буенча шәхси клиентлар һәм бизнес белән эшлибез.',
-                        'ТР буенча һәм РФ буенча җибәрү.',
-                        '8 800 600 5635',
-                        'info@coffeejan.com',
-                        'Набережные Челны шәһәре',
-                    ],
-                    buttons: [
-                        {id: 'final-products', label: 'Продукцияне карау', path: '/products'},
-                        {id: 'final-contact', label: 'Бәйләнешкә чыгу', path: '/contact'},
-                        {id: 'final-about', label: 'Компания турында', path: '/about'},
-                    ],
-                    note: 'Россия буенча эшли торган кайнар линия.',
-                },
-            },
-            about: {
-                hero: {
-                    titlePart1: 'Дәрт белән Ясалган,',
-                    titlePart2Highlight: 'Традициягә Таянган',
-                    subtitle: "CoffeeJan'да без гасырлык кофе традицияләрен заманча осталык техникалары белән кушабыз.",
-                    description: "Безнең юлыбыз гади миссиядән башланды: Татарстанның бай мәдәни мирасын хөрмәт итеп, дөньяның иң яхшы кофесын таләпчән кофе яратучыларга җиткерү."
-                },
-                imageCallout: {
-                    title: 'Оста Обжарка Процессы',
-                    description: 'Һәр партия оста һөнәрчеләр тарафыннан камилләштерелә'
-                },
-                storyAndFacts: {
-                    storyTitle: 'Безнең Юлыбыз',
-                    paragraph1: 'Татарстанның үзәгендә оешкан безнең бренд континентларны колачлаган камиллеккә омтылуны чагылдыра. Без дөньяның танылган кофе үстерү төбәкләреннән иң яхшы бөртекләрне алып кайтабыз, аларны традиция инновацияләр белән очрашкан обжарка йортыбызга китерәбез.',
-                    paragraph2: 'Һәр партия камиллеккә ирешкәнче җентекләп обжаркалана, һәр чыгышны үзенчәлекле иткән уникаль тәм профильләре саклана. Беренче ярылудан алып соңгы суытуга кадәр, безнең мастер-обжаркачылар һәр бөртекнең CoffeeJan танылган премиум сыйфатын гәүдәләндерүен тәэмин итә.',
-                    quote: 'Без бары тик кофе гына обжаркаламыйбыз — без һәр чынаякта кешеләрне, мәдәниятләрне һәм шатлык мизгелләрен бәйләүче тәҗрибәләр тудырабыз.',
-                    fact1: {
-                        value: '6+',
-                        label: 'Ел Камиллек',
-                        subLabel: '2019 елдан бирле'
-                    },
-                    fact2: {
-                        value: '50+',
-                        label: 'Кофе Чыгышы',
-                        subLabel: 'Бөтен дөнья буенча'
-                    }
-                },
-                missionAndValues: {
-                    sectionTitle: 'Безнең Миссия һәм Ценностьлар',
-                    sectionSubtitle: 'Соурсингтан алып сервировкага кадәр без эшләгән һәрнәрсәне билгеләүче принциплар белән идарә ителә',
-                    mission: {
-                        icon: 'crisisAlert',
-                        title: 'Безнең Миссия',
-                        paragraph1: 'Традицияләрне хөрмәт итүче, әмма инновацияләрне кабул итүче үзенчәлекле кофе тәҗрибәләрен китерү. Безнең максат — кофе яратучыларны Татарстан йөрәгендә камиллеккә обжаркаланган дөньяның иң яхшы бөртекләре белән бәйләү.',
-                        paragraph2: 'Без ясаган һәр чынаяк сыйфатка, тотрыклылыкка һәм кофе ясау сәнгатенә тугрылыгыбызны чагылдыра.'
-                    },
-                    valuesTitle: 'Безнең Ценностьлар',
-                    values: [
-                        {
-                            icon: 'checkCircle',
-                            title: 'Сыйфат Беренче',
-                            description: 'Һәр адымда компромиссыз стандартлар'
-                        },
-                        {
-                            icon: 'checkCircle',
-                            title: 'Тотрыклылык',
-                            description: 'Этик соурсинг һәм әйләнә-тирә мохиткә кайгырту'
-                        },
-                        {
-                            icon: 'checkCircle',
-                            title: 'Инновация',
-                            description: 'Традицияләрне заманча техникалар белән кушу'
-                        }
-                    ]
-                },
-                threePillars: {
-                    sectionTitle: 'Безнең Өч Нигез',
-                    sectionSubtitle: 'Без ясаган һәр чынаякны билгеләүче камиллек нигезе',
-                    pillars: [
-                        {
-                            icon: 'whatshot',
-                            title: 'Һөнәрчелек Обжаркасы',
-                            paragraph1: 'Мастер-обжаркачылар һәр партияне төгәллек белән әзерли, һәр бөртек чыгышының үзенчәлекле сыйфатларын ача. Вакыт сынавын үткән техникаларыбыз даими камиллекне тәэмин итә.',
-                            paragraph2: 'Без буыннар аша тапшырылган традицион методлар белән берлектә заманча җиһазлар кулланабыз.'
-                        },
-                        {
-                            icon: 'language',
-                            title: 'Глобаль Соурсинг',
-                            paragraph1: 'Без дөньяның иң яхшы кофе фермалары белән хезмәттәшлек итәбез, премиум бөртекләрне тотрыклы һәм этик соурсинглауны тәэмин итәбез. Фермадан чынаякка кадәр сыйфат.',
-                            paragraph2: 'Фермерлар белән туры элемтәләр ел саен гадел бәяләүне һәм гадәттән тыш бөртек сыйфатын гарантияли.'
-                        },
-                        {
-                            icon: 'accountBalance',
-                            title: 'Татарстан Мирасы',
-                            paragraph1: 'Татарстандагы тамырларыбыз безне традицияләрне хөрмәт итәргә, шул ук вакытта без ясаган һәр чынаякта инновацияләрне кабул итәргә рухландыра. Камиллек мирасы.',
-                            paragraph2: 'Без төбәгебезнең сыйфатка һәм һөнәрчелеккә тугрылыгын глобаль сәхнәдә күрсәтү белән горурланабыз.'
-                        }
-                    ]
-                }
-            },
-            products: {
-                title: 'Продукция',
-                description: 'Продукция турында мәгълүмат әзерләнә.',
-                products: [],
-            },
-            contact: {
-                hero: {
-                    title: 'Әңгәмә башларга вакыт',
-                    subtitle: 'Заказлар, ярдәм яки хезмәттәшлек сораулары буенча безнең командага мөрәжәгать итегез.',
-                    ctaLabel: 'Компания турында белү',
-                },
-                form: {
-                    title: 'Безгә хәбәр җибәрегез',
-                    description: 'Безнең команда гадәттә 24 эш сәгате эчендә җавап бирә.',
-                    fields: {
-                        name: 'Сезнең тулы исемегез',
-                        email: 'Электрон почта адресы',
-                        subject: 'Тема',
-                        message: 'Сезнең хәбәр',
-                    },
-                    buttonLabel: 'Хәбәрне җибәрергә',
-                    submissionMessage: 'Хәбәрегез өчен рәхмәт! Без сезнең белән тиздән элемтәгә керәбез.',
-                },
-                info: {
-                    title: 'Бәйләнеш мәгълүматлары',
-                    description: 'Сез безнең белән түбәндәге каналлар аша да элемтәгә керә аласыз.',
-                    email: {
-                        title: 'Электрон почта ярдәме',
-                        value: 'info@coffeejan.com',
-                    },
-                    phone: {
-                        title: 'Безгә шалтыратыгыз (бушлай)',
-                        value: '8 800 600 5635',
-                    },
-                    address: {
-                        title: 'Баш офис',
-                        value: 'Россия, Набережные Челны',
-                    },
-                },
-
-                extraCta: {
-                    productsButton: {
-                        label: 'Товарлар',
-                        path: '/products',
-                    },
-                    callButton: {
-                        label: 'Безгә шалтыратыгыз',
-                        path: 'tel:88006005635',
-                    },
-                },
-            },
-        },
-        footer: {
-            description: 'Өйгә, кафе, рестораннар һәм вендинг өчен кофе чишелешләре.',
-
-            contactHeading: 'Элемтәдә булыгыз',
-            contactLabels: {
-                email: 'Безгә язырга',
-                phone: 'Безгә шалтыратыгыз',
-                address: 'Безнең адрес',
-            },
-
-            companyHeading: 'Компания',
-            companyLabels: {
-                about: 'Без турында',
-                contacts: 'Контактлар',
-                terms: 'Куллану шартлары',
-                privacy: 'Хосусыйлык сәясәте',
-            },
-
-            productsHeading: 'Продукция',
-            productLabels: {
-                beans: 'Кофе бөртекләре',
-                sticks: 'Кофе стиктары',
-                assorted: 'Катнаш пакетлар',
-            },
-
-            rights: '© CoffeeJan. Бөтен хокуклар сакланган.',
-        },
-    },
+    hy: ARMENIAN,
 };

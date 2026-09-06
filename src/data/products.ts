@@ -9,12 +9,12 @@ const coffeeItems = [
             name: {
                 en: 'New Coffee Stick',
                 ru: '*Translate to russian*',
-                tt: '*Translate to Tatarian*',
+                hy: "Սուրճի նոր փաթեթ",
             },
             description: {
                 en: 'Our new coffee stick.',
                 ru: '*Translate to russian*',
-                tt: '*Translate to Tatarian*',
+                hy: "Մեր նոր լուծվող սուրճը։",
             },
             typeId: 'instant',
             categoryId: 'sticks',
@@ -32,12 +32,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Classic Stick',
             ru: 'Классический Стик',
-            tt: 'Классик стик',
+            hy: "Դասական սուրճ",
         },
         description: {
             en: 'Our most balanced instant blend.',
             ru: 'Наш самый сбалансированный растворимый кофе.',
-            tt: 'Безнең иң баланслаштырылган тиз эри торган кофе катнашмасы.',
+            hy: "Մեր ամենահավասարակշռված լուծվող սուրճի խառնուրդը։",
         },
         typeId: 'instant',
         categoryId: 'sticks',
@@ -50,12 +50,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Mild Stick',
             ru: 'Мягкий Стик',
-            tt: 'Йомшак стик',
+            hy: "Մեղմ սուրճ",
         },
         description: {
             en: 'Soft and smooth instant coffee with a gentle taste.',
             ru: 'Мягкий и нежный растворимый кофе с приятным вкусом.',
-            tt: 'Йомшак тәме белән назлы һәм шома тиз эри торган кофе.',
+            hy: "Նուրբ և մեղմ լուծվող սուրճ՝ հաճելի համով։",
         },
         typeId: 'instant',
         categoryId: 'sticks',
@@ -68,12 +68,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Strong Stick',
             ru: 'Крепкий Стик',
-            tt: 'Көчле стик',
+            hy: "Թունդ սուրճ",
         },
         description: {
             en: 'Rich and intense instant coffee for a bold taste.',
             ru: 'Насыщенный и крепкий растворимый кофе для яркого вкуса.',
-            tt: 'Ачык тәм өчен бай һәм интенсив тиз эри торган кофе.',
+            hy: "Հագեցած և թունդ լուծվող սուրճ՝ արտահայտիչ համով։",
         },
         typeId: 'instant',
         categoryId: 'sticks',
@@ -86,12 +86,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Latte Stick',
             ru: 'Латте Стик',
-            tt: 'Латте стик',
+            hy: "Լատտե",
         },
         description: {
             en: 'Creamy latte-style instant coffee.',
             ru: 'Растворимый кофе в стиле сливочного латте.',
-            tt: 'Каймаклы латте стилендәге тиз эри торган кофе.',
+            hy: "Լուծվող սուրճ՝ սերուցքային լատտեի համով։",
         },
         typeId: 'instant',
         categoryId: 'sticks',
@@ -104,12 +104,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Hot Chocolate Stick',
             ru: 'Горячий Шоколад Стик',
-            tt: 'Кайнар шоколад стигы',
+            hy: "Տաք շոկոլադ",
         },
         description: {
             en: 'Smooth and comforting hot chocolate drink.',
             ru: 'Мягкий и согревающий напиток из горячего шоколада.',
-            tt: 'Йомшак һәм юатучы кайнар шоколад эчемлеге.',
+            hy: "Նուրբ և ջերմացնող տաք շոկոլադե ըմպելիք։",
         },
         typeId: 'instant',
         categoryId: 'sticks',
@@ -122,12 +122,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Forest Berries Tea Stick',
             ru: 'Чай со вкусом Лесных Ягод Стик',
-            tt: 'Урман җиләкләре чәй стигы',
+            hy: "Անտառային հատապտուղներով թեյ",
         },
         description: {
             en: 'Aromatic fruit tea with forest berries flavor.',
             ru: 'Ароматный фруктовый чай со вкусом лесных ягод.',
-            tt: 'Урман җиләкләре тәме белән хуш исле җимеш чәе.',
+            hy: "Բուրավետ մրգային թեյ՝ անտառային հատապտուղների համով։",
         },
         typeId: 'tea',
         categoryId: 'sticks',
@@ -140,12 +140,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Lime Tea Stick',
             ru: 'Чай с Лаймом Стик',
-            tt: 'Лайм чәй стигы',
+            hy: "Լայմով թեյ",
         },
         description: {
             en: 'Refreshing tea with a bright lime taste.',
             ru: 'Освежающий чай с ярким вкусом лайма.',
-            tt: 'Якты лайм тәме белән терелтүче чәй.',
+            hy: "Թարմացնող թեյ՝ լայմի վառ համով։",
         },
         typeId: 'tea',
         categoryId: 'sticks',
@@ -158,12 +158,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Blackcurrant Tea Stick',
             ru: 'Чай с Черной Смородиной Стик',
-            tt: 'Кара карлыган чәй стигы',
+            hy: "Սև հաղարջով թեյ",
         },
         description: {
             en: 'Fragrant tea with blackcurrant notes.',
             ru: 'Ароматный чай с нотками черной смородины.',
-            tt: 'Кара карлыган ноталары белән хуш исле чәй.',
+            hy: "Բուրավետ թեյ՝ սև հաղարջի նոտաներով։",
         },
         typeId: 'tea',
         categoryId: 'sticks',
@@ -176,12 +176,12 @@ export const PRODUCTS: Product[] = [
         name: {
             en: 'Peach Tea Stick',
             ru: 'Чай с Персиком Стик',
-            tt: 'Шәфталу чәй стигы',
+            hy: "Դեղձով թեյ",
         },
         description: {
             en: 'Light and aromatic tea with peach flavor.',
             ru: 'Легкий и ароматный чай со вкусом персика.',
-            tt: 'Шәфталу тәме белән җиңел һәм хуш исле чәй.',
+            hy: "Թեթև և բուրավետ թեյ՝ դեղձի համով։",
         },
         typeId: 'tea',
         categoryId: 'sticks',

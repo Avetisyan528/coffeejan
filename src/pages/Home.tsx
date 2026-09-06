@@ -211,7 +211,7 @@ const Home: React.FC = () => {
                                                 cursor: 'pointer',
                                             }}
                                         >
-                                            See More
+                                            {language === 'hy' ? 'Տեսնել ավելին' : language === 'ru' ? 'Подробнее' : 'See More'}
                                             <ArrowForwardIcon sx={{fontSize: '1.2em'}}/>
                                         </Typography>
                                     </Box>

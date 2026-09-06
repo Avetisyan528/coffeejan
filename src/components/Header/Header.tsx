@@ -27,7 +27,7 @@ import BrandLogo from '../BrandLogo/BrandLogo';
 
 // Flags
 const UK_FLAG_SVG = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><path fill="#012169" d="M0 0h60v30H0z"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg>`);
-const TATAR_FLAG_SVG = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3"><rect width="6" height="3" fill="#00923f"/><rect y="1" width="6" height="1" fill="#fff"/><rect y="1.2" width="6" height="0.6" fill="#d81e05"/><rect y="2" width="6" height="1" fill="#d81e05"/></svg>`);
+const ARMENIAN_FLAG_SVG = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3"><path fill="#D90012" d="M0 0h6v1H0z"/><path fill="#0033A0" d="M0 1h6v1H0z"/><path fill="#F2A800" d="M0 2h6v1H0z"/></svg>`);
 const RUSSIAN_FLAG_SVG = encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 3"><rect width="6" height="1" fill="#fff"/><rect y="1" width="6" height="1" fill="#0039a6"/><rect y="2" width="6" height="1" fill="#d52b1e"/></svg>`);
 
 // Flag base styles
@@ -45,13 +45,13 @@ const FLAG_BASE_SX = {
 const FLAG_STYLES: Record<Language, object> = {
     en: {backgroundImage: `url("data:image/svg+xml,${UK_FLAG_SVG}")`},
     ru: {backgroundImage: `url("data:image/svg+xml,${RUSSIAN_FLAG_SVG}")`},
-    tt: {backgroundImage: `url("data:image/svg+xml,${TATAR_FLAG_SVG}")`},
+    hy: {backgroundImage: `url("data:image/svg+xml,${ARMENIAN_FLAG_SVG}")`},
 };
 
 const LANGUAGE_LABELS: Record<Language, string> = {
     en: 'EN',
     ru: 'RU',
-    tt: 'TT',
+    hy: 'ՀԱՅ',
 };
 
 const Header: React.FC = () => {
@@ -99,6 +99,7 @@ const Header: React.FC = () => {
                             })}
 
                             <Select
+                                inputProps={{'aria-label': translations.header.languageToggleLabel}}
                                 value={language}
                                 onChange={(e: SelectChangeEvent<Language>) => setLanguage(e.target.value as Language)}
                                 size="small"
@@ -140,11 +141,11 @@ const Header: React.FC = () => {
             </AppBar>
 
             <Drawer anchor="right" open={drawerOpen} onClose={() => setDrawerOpen(false)} color="primary" elevation={0}>
-                <Box sx={{width: 250, p: 2}} role="presentation" onClick={() => setDrawerOpen(false)}>
+                <Box sx={{width: 250, p: 2}} role="presentation">
                     <List>
                         {NAV_LINKS.map(({key, path}) => (
                             <ListItem key={key} disablePadding>
-                                <ListItemButton component={RouterLink} to={path}>
+                                <ListItemButton component={RouterLink} to={path} onClick={() => setDrawerOpen(false)}>
                                     <ListItemText primary={translations.header.navLabels[key]}/>
                                 </ListItemButton>
                             </ListItem>
@@ -153,6 +154,7 @@ const Header: React.FC = () => {
 
                     <Box sx={{mt: 2}}>
                         <Select
+                            inputProps={{'aria-label': translations.header.languageToggleLabel}}
                             value={language}
                             onChange={(e: SelectChangeEvent<Language>) => setLanguage(e.target.value as Language)}
                             size="small"
