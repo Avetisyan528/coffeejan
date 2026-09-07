@@ -93,9 +93,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     details: [
                         'We work with private customers and businesses across Russia.',
                         'Nationwide delivery.',
-                        '8 800 600 5635',
+                        '+374 95 052549',
                         'info@coffeejan.am',
-                        'Naberezhnye Chelny',
+                        'Yerevan, Armenia',
                     ],
                     buttons: [
                         {id: 'final-products', label: 'View Products', path: '/products'},
@@ -237,12 +237,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                         value: 'info@coffeejan.am',
                     },
                     phone: {
-                        title: 'Call Us (Toll-Free)',
-                        value: '8 800 600 5635',
+                        title: 'Call Us',
+                        value: '+374 95 052549',
                     },
                     address: {
                         title: 'Corporate Office',
-                        value: 'Naberezhnye Chelny, Russia',
+                        value: 'Yerevan, Armenia',
                     },
                 },
                 extraCta: {
@@ -252,7 +252,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     },
                     callButton: {
                         label: 'Call Us',
-                        path: 'tel:88006005635',
+                        path: 'tel:+37495052549',
                     },
                 },
             },
@@ -374,9 +374,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     details: [
                         'Работаем с частными клиентами и бизнесом по всей России.',
                         'Доставка по РФ.',
-                        '8 800 600 5635',
+                        '+374 95 052549',
                         'info@coffeejan.am',
-                        'г. Набережные Челны',
+                        'Ереван, Армения',
                     ],
                     buttons: [
                         {id: 'final-products', label: 'Посмотреть продукцию', path: '/products'},
@@ -498,11 +498,11 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     },
                     phone: {
                         title: 'Позвоните нам (Бесплатно)',
-                        value: '8 800 600 5635',
+                        value: '+374 95 052549',
                     },
                     address: {
                         title: 'Главный офис',
-                        value: 'г. Набережные Челны, Россия',
+                        value: 'Ереван, Армения',
                     },
                 },
 
@@ -513,7 +513,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     },
                     callButton: {
                         label: 'Позвонить Нам',
-                        path: 'tel:88006005635',
+                        path: 'tel:+37495052549',
                     },
                 },
             },

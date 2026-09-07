@@ -9,7 +9,7 @@ export const NAV_LINKS: Array<{ key: NavKey; path: string }> = [
 export const FOOTER_LINKS = {
     contact: [
         { key: 'email' as FooterContactKey, path: 'mailto:info@coffeejan.am' },
-        { key: 'phone' as FooterContactKey, path: 'tel:88006005635' },
+        { key: 'phone' as FooterContactKey, path: 'tel:+37495052549' },
         { key: 'address' as FooterContactKey, path: '/contact' },
     ],
     company: [

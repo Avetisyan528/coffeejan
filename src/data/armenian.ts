@@ -23,7 +23,7 @@ export const ARMENIAN: Translations = {
             finalCta: {
                 title: 'Պատրա՞ստ եք վայելելու իսկական սուրճ', description: 'Կապվեք մեզ հետ՝ ամբողջական կատալոգը ստանալու կամ խորհրդատվություն կազմակերպելու համար։',
                 subtitle: 'Սկսեք CoffeeJan-ի հետ այսօր',
-                details: ['Մենք աշխատում ենք անհատ հաճախորդների և բիզնեսների հետ ամբողջ Ռուսաստանում։', 'Առաքում ամբողջ երկրում։', '8 800 600 5635', 'info@coffeejan.am', 'Նաբերեժնիե Չելնի'],
+                details: ['Մենք աշխատում ենք անհատ հաճախորդների և բիզնեսների հետ ամբողջ Ռուսաստանում։', 'Առաքում ամբողջ երկրում։', '+374 95 052549', 'info@coffeejan.am', 'Երևան, Հայաստան'],
                 buttons: [{id: 'final-products', label: 'Դիտել ապրանքները', path: '/products'}, {id: 'final-contact', label: 'Կապ մեզ հետ', path: '/contact'}, {id: 'final-about', label: 'Ընկերության մասին', path: '/about'}],
                 note: 'Թեժ գիծը հասանելի է ամբողջ Ռուսաստանում։',
             },
@@ -59,8 +59,8 @@ export const ARMENIAN: Translations = {
         contact: {
             hero: {title: 'Սկսենք զրույցը', subtitle: 'Պատվերների, աջակցության կամ համագործակցության հարցերով կապվեք մեր թիմի հետ։', ctaLabel: 'Իմանալ ընկերության մասին'},
             form: {title: 'Գրեք մեզ', description: 'Մեր թիմը սովորաբար պատասխանում է 24 աշխատանքային ժամվա ընթացքում։', fields: {name: 'Ձեր անունն ու ազգանունը', email: 'Էլեկտրոնային հասցե', subject: 'Թեմա', message: 'Ձեր հաղորդագրությունը'}, buttonLabel: 'Ուղարկել հաղորդագրությունը', submissionMessage: 'Շնորհակալություն հաղորդագրության համար։ Մենք շուտով կկապվենք ձեզ հետ։'},
-            info: {title: 'Կոնտակտային տվյալներ', description: 'Մեզ հետ կարող եք կապվել նաև հետևյալ միջոցներով։', email: {title: 'Էլեկտրոնային փոստ', value: 'info@coffeejan.am'}, phone: {title: 'Զանգահարեք մեզ (անվճար)', value: '8 800 600 5635'}, address: {title: 'Գլխավոր գրասենյակ', value: 'Ռուսաստան, Նաբերեժնիե Չելնի'}},
-            extraCta: {productsButton: {label: 'Ապրանքներ', path: '/products'}, callButton: {label: 'Զանգահարեք մեզ', path: 'tel:88006005635'}},
+            info: {title: 'Կոնտակտային տվյալներ', description: 'Մեզ հետ կարող եք կապվել նաև հետևյալ միջոցներով։', email: {title: 'Էլեկտրոնային փոստ', value: 'info@coffeejan.am'}, phone: {title: 'Զանգահարեք մեզ', value: '+374 95 052549'}, address: {title: 'Գլխավոր գրասենյակ', value: 'Երևան, Հայաստան'}},
+            extraCta: {productsButton: {label: 'Ապրանքներ', path: '/products'}, callButton: {label: 'Զանգահարեք մեզ', path: 'tel:+37495052549'}},
         },
     },
     footer: {
@@ -70,3 +70,4 @@ export const ARMENIAN: Translations = {
         productsHeading: 'Ապրանքներ', productLabels: {beans: 'Հատիկավոր սուրճ', sticks: 'Սուրճի փաթեթներ', assorted: 'Տեսականի'}, rights: '© CoffeeJan. Բոլոր իրավունքները պաշտպանված են։',
     },
 };
+
