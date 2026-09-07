@@ -771,3 +771,69 @@ p {
   filter:grayscale(.7)
 }
 
+
+/* Custom language menu and quiet, outline-free form focus states. */
+.language-select.MuiInputBase-root {
+  font-size: 13px;
+  color: #514430;
+}
+.language-select .MuiSelect-select {
+  min-width: 34px;
+  padding: 9px 25px 9px 0;
+  outline: none;
+}
+.language-select .MuiSelect-select:focus {
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+}
+.language-select .MuiSelect-select:focus-visible {
+  color: #967342;
+  box-shadow: 0 1px 0 #a47b3d;
+}
+.language-select .MuiSelect-icon {
+  color: #967342;
+  font-size: 19px;
+}
+.language-menu.MuiPaper-root {
+  margin-top: 12px;
+  min-width: 175px;
+  border: 1px solid #d9cbb6;
+  border-radius: 3px;
+  background: #f5f0e7;
+  color: #514430;
+  box-shadow: 0 12px 30px rgba(39, 33, 25, .12);
+}
+.language-menu .MuiList-root {
+  padding: 6px;
+}
+.language-menu .MuiMenuItem-root {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 43px;
+  padding: 11px 14px;
+  font-size: 14px;
+  outline: none;
+}
+.language-menu .MuiMenuItem-root:hover,
+.language-menu .MuiMenuItem-root.Mui-focusVisible {
+  background: #e8decd;
+  outline: none;
+}
+.language-menu .MuiMenuItem-root.Mui-selected,
+.language-menu .MuiMenuItem-root.Mui-selected:hover {
+  background: #e5d8c2;
+  color: #644b29;
+}
+.language-check {
+  min-width: 14px;
+  color: #967342;
+  font-size: 13px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom-color: #967342;
+  box-shadow: 0 1px 0 #967342;
+}
