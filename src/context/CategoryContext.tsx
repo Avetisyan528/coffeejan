@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { ProductCategory } from '../types/products';
 import { PRODUCT_CATEGORIES } from '../data/categories';
+import { PRODUCTS } from '../data/products';
+
+const populatedCategories = PRODUCT_CATEGORIES.filter(category =>
+    PRODUCTS.some(product => product.categoryId === category.id)
+);
 
 export type CategoryContextValue = {
     categories: ProductCategory[];
@@ -11,13 +16,13 @@ const CategoryContext = React.createContext<CategoryContextValue | undefined>(un
 
 export const CategoryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const getCategoryById = React.useCallback(
-        (id: string) => PRODUCT_CATEGORIES.find((c) => c.id === id),
+        (id: string) => populatedCategories.find((c) => c.id === id),
         []
     );
 
     const value = React.useMemo(
         () => ({
-            categories: PRODUCT_CATEGORIES,
+            categories: populatedCategories,
             getCategoryById,
         }),
         [getCategoryById]
