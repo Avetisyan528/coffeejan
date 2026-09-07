@@ -837,3 +837,50 @@ p {
   border-bottom-color: #967342;
   box-shadow: 0 1px 0 #967342;
 }
+
+/* Keep the supplied photography true to its original colors and framing. */
+.catalog-image img,
+.detail-image img {
+  mix-blend-mode: normal;
+}
+.product-gallery .detail-image {
+  padding: 0;
+  background: transparent;
+}
+.product-gallery .detail-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+}
+.gallery-thumbnails {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+.gallery-thumbnails button {
+  width: 105px;
+  padding: 4px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #766a5c;
+  text-align: center;
+}
+.gallery-thumbnails button[aria-pressed="true"] {
+  border-color: #967342;
+  color: #514430;
+}
+.gallery-thumbnails button:hover {
+  background: #e8decd;
+}
+.gallery-thumbnails img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.gallery-thumbnails span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 7px 0 3px;
+}
