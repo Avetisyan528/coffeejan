@@ -1,24 +1,3 @@
 import { createTheme } from '@mui/material/styles';
-
-const theme = createTheme({
-    palette: {
-        mode: 'dark',
-        primary: {
-            main: '#000000',
-            contrastText: '#ffffff',
-            dark: '#101010',
-            light: '#9ca3af',
-        },
-        secondary: {
-            main: '#c8a15a',
-            contrastText: '#1a1a1a',
-        },
-        background: {
-            default: '#000000',
-            paper: '#111111',
-        },
-    },
-});
-
+const theme = createTheme({ palette: { mode: 'light', primary: { main: '#201b16', light: '#766a5c', dark: '#171410', contrastText: '#f5eee3' }, secondary: { main: '#a47b3d', contrastText: '#fffaf1' }, background: { default: '#f5f0e7', paper: '#eee6d9' }, text: { primary: '#272119', secondary: '#756b5d' } }, typography: { fontFamily: 'Arial, "Noto Sans Armenian", sans-serif', h1: { fontFamily: 'Georgia, "Times New Roman", serif' }, h2: { fontFamily: 'Georgia, "Times New Roman", serif' }, h3: { fontFamily: 'Georgia, "Times New Roman", serif' }, h4: { fontFamily: 'Georgia, "Times New Roman", serif' } }, shape: { borderRadius: 0 }, components: { MuiButton: { styleOverrides: { root: { borderRadius: 0, textTransform: 'none', padding: '12px 24px' } } }, MuiCard: { styleOverrides: { root: { boxShadow: 'none' } } } } });
 export default theme;
-

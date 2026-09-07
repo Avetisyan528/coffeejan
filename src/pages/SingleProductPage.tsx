@@ -1,37 +1,8 @@
-import * as React from 'react';
-import {Box, Button, Card, CardContent, CardMedia, Typography} from '@mui/material';
-import {Link, useParams} from 'react-router-dom';
-import {useLanguage} from '../context/LanguageContext';
-import {useProducts} from '../context/ProductsContext';
-import {useCategories} from '../context/CategoryContext';
-import {PRODUCT_IMAGES} from '../constants/productImages';
+import { Link, useParams } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import { useProducts } from '../context/ProductsContext';
+import { useCategories } from '../context/CategoryContext';
+import { PRODUCT_IMAGES } from '../constants/productImages';
 import NotFound from './NotFound';
-
-const SingleProductPage: React.FC = () => {
-    const {language} = useLanguage();
-    const {categorySlug, productSlug} = useParams();
-    const {categories} = useCategories();
-    const {products} = useProducts();
-    const category = categories.find(item => item.slug === categorySlug);
-    const product = products.find(item => item.slug === productSlug && item.categoryId === category?.id);
-
-    if (!category || !product) return <NotFound />;
-
-    return (
-        <Box sx={{maxWidth: 900, mx: 'auto', px: 3, py: 6}}>
-            <Button component={Link} to={`/products/${category.slug}`} color="secondary" sx={{mb: 3}}>
-                ← {category.title[language]}
-            </Button>
-            <Card sx={{borderRadius: 3}}>
-                <CardMedia component="img" image={PRODUCT_IMAGES[product.imageKey]} alt={product.name[language]}
-                           sx={{height: {xs: 300, md: 450}, objectFit: 'contain', p: 3}} />
-                <CardContent>
-                    <Typography variant="h4" component="h1" gutterBottom>{product.name[language]}</Typography>
-                    <Typography>{product.description[language]}</Typography>
-                </CardContent>
-            </Card>
-        </Box>
-    );
-};
-
-export default SingleProductPage;
+export default function SingleProductPage() { const { language, translations: t } = useLanguage(); const { categorySlug, productSlug } = useParams(); const { products } = useProducts(); const { categories } = useCategories(); const category = categories.find(c => c.slug === categorySlug); const product = products.find(p => p.slug === productSlug && p.categoryId === category?.id); if (!product || !category)
+    return <NotFound />; return <section className="section"><Link className="text-link" to={`/products/${category.slug}`}>← {category.title[language]}</Link><div className="product-detail"><div className="detail-image"><img src={PRODUCT_IMAGES[product.imageKey]} alt={product.name[language]}/></div><div className="detail-copy"><span className="eyebrow">COFFEE JAN</span><h1>{product.name[language]}</h1><p>{product.description[language]}</p><div className="detail-category">{category.title[language]}</div><Link className="button dark" to="/contact">{t.header.navLabels.contact}<span>↗</span></Link><span className="eyebrow detail-motto">BREWED WITH SOUL</span></div></div></section>; }
