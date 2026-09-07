@@ -243,7 +243,7 @@ const BrandMarketingAnalysis: React.FC = () => {
 
             <footer className="text-center p-8 mt-16 border-t border-[#c8a15a]/50">
                 <p className="text-gray-500">
-                    Анализ маркетинга кофейных брендов на рынке Татарстана.
+                    Анализ маркетинга кофейных брендов на рынке Армении.
                 </p>
             </footer>
         </div>

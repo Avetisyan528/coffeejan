@@ -111,7 +111,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     titlePart1: 'Crafted with Passion,',
                     titlePart2Highlight: 'Rooted in Tradition',
                     subtitle: 'At CoffeeJan, we blend centuries-old coffee traditions with modern artisanal techniques.',
-                    description: "Our journey began with a simple mission: to bring the world's finest coffee to discerning enthusiasts while honoring the rich cultural legacy of Tatarstan.",
+                    description: "Our journey began with a simple mission: to bring the world's finest coffee to discerning enthusiasts while honoring the rich cultural legacy of Armenia.",
                 },
 
                 imageCallout: {
@@ -121,7 +121,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
 
                 storyAndFacts: {
                     storyTitle: 'Our Journey',
-                    paragraph1: "Founded in the heart of Tatarstan, our brand represents a commitment to excellence that spans continents. We source the finest beans from renowned coffee-growing regions worldwide, bringing them back to our roastery where tradition meets innovation.",
+                    paragraph1: "Founded in the heart of Armenia, our brand represents a commitment to excellence that spans continents. We source the finest beans from renowned coffee-growing regions worldwide, bringing them back to our roastery where tradition meets innovation.",
                     paragraph2: "Every batch is carefully roasted to perfection, preserving the unique flavor profiles that make each origin special. From the first crack to the final cooling, our master roasters ensure that every bean embodies the premium quality CoffeeJan is known for.",
                     quote: "We don't just roast coffee—we craft experiences that connect people, cultures, and moments of joy in every cup.",
                     fact1: {
@@ -143,7 +143,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     mission: {
                         icon: 'crisisAlert',
                         title: 'Our Mission',
-                        paragraph1: 'To deliver exceptional coffee experiences that honor tradition while embracing innovation. We aim to connect coffee lovers with the world\'s finest beans, roasted to perfection in the heart of Tatarstan.',
+                        paragraph1: 'To deliver exceptional coffee experiences that honor tradition while embracing innovation. We aim to connect coffee lovers with the world\'s finest beans, roasted to perfection in the heart of Armenia.',
                         paragraph2: 'Every cup we create represents our dedication to quality, sustainability, and the art of coffee making.',
                     },
 
@@ -185,8 +185,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                         },
                         {
                             icon: 'accountBalance',
-                            title: 'Tatarstan Heritage',
-                            paragraph1: "Our roots in Tatarstan inspire us to honor tradition while embracing innovation in every cup we create. A legacy of excellence.",
+                            title: 'Armenian Heritage',
+                            paragraph1: "Our roots in Armenia inspire us to honor tradition while embracing innovation in every cup we create. A legacy of excellence.",
                             paragraph2: "We're proud to represent our region's commitment to quality and craftsmanship on the global stage.",
                         },
                     ],
@@ -391,7 +391,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     titlePart1: 'Создано с любовью,',
                     titlePart2Highlight: 'С корнями в Традиции',
                     subtitle: 'В CoffeeJan мы сочетаем многовековые кофейные традиции с современными ремесленными техниками.',
-                    description: 'Наш путь начался с простой миссии: донести лучший в мире кофе до взыскательных ценителей, почитая при этом богатое культурное наследие Татарстана.'
+                    description: 'Наш путь начался с простой миссии: донести лучший в мире кофе до взыскательных ценителей, почитая при этом богатое культурное наследие Армении.'
                 },
                 imageCallout: {
                     title: 'Процесс Мастерской Обжарки',
@@ -399,7 +399,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                 },
                 storyAndFacts: {
                     storyTitle: 'Наша История',
-                    paragraph1: 'Основанный в самом сердце Татарстана, наш бренд олицетворяет приверженность к совершенству, охватывающую континенты. Мы закупаем лучшие зерна из известных регионов мира, выращивающих кофе, привозя их обратно в нашу обжарочную, где традиции встречаются с инновациями.',
+                    paragraph1: 'Основанный в самом сердце Армении, наш бренд олицетворяет приверженность к совершенству, охватывающую континенты. Мы закупаем лучшие зерна из известных регионов мира, выращивающих кофе, привозя их обратно в нашу обжарочную, где традиции встречаются с инновациями.',
                     paragraph2: 'Каждая партия тщательно обжаривается до совершенства, сохраняя уникальные вкусовые профили, которые делают каждый сорт особенным. От первого потрескивания до финального охлаждения наши мастера-обжарщики гарантируют, что каждое зерно воплощает премиальное качество, которым славится CoffeeJan.',
                     quote: 'Мы не просто обжариваем кофе — мы создаем впечатления, которые объединяют людей, культуры и моменты радости в каждой чашке.',
                     fact1: {
@@ -419,7 +419,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                     mission: {
                         icon: 'crisisAlert',
                         title: 'Наша Миссия',
-                        paragraph1: 'Предоставлять исключительный кофейный опыт, который чтит традиции, но при этом приветствует инновации. Наша цель — соединить любителей кофе с лучшими мировыми зернами, обжаренными до совершенства в сердце Татарстана.',
+                        paragraph1: 'Предоставлять исключительный кофейный опыт, который чтит традиции, но при этом приветствует инновации. Наша цель — соединить любителей кофе с лучшими мировыми зернами, обжаренными до совершенства в сердце Армении.',
                         paragraph2: 'Каждая чашка, которую мы создаем, отражает нашу приверженность качеству, устойчивости и искусству приготовления кофе.'
                     },
                     valuesTitle: 'Наши Ценности',
@@ -459,8 +459,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
                         },
                         {
                             icon: 'accountBalance',
-                            title: 'Наследие Татарстана',
-                            paragraph1: 'Наши корни в Татарстане вдохновляют нас чтить традиции, приветствуя инновации в каждой чашке, которую мы создаем. Наследие превосходства.',
+                            title: 'Наследие Армении',
+                            paragraph1: 'Наши корни в Армении вдохновляют нас чтить традиции, приветствуя инновации в каждой чашке, которую мы создаем. Наследие превосходства.',
                             paragraph2: 'Мы гордимся тем, что представляем приверженность нашего региона качеству и мастерству на мировой арене.'
                         }
                     ]

@@ -156,10 +156,10 @@ const CoffeeMarketAnalysis: React.FC = () => {
                 {/* Секция 1: Обзор */}
                 <section className="space-y-6">
                     <h1 className={`text-4xl sm:text-5xl font-bold ${ACCENT_TEXT_COLOR} mb-6 border-b pb-2 border-[#c8a15a]/50`}>
-                        Кофейный рынок Татарстана: Анализ
+                        Кофейный рынок Армении: Анализ
                     </h1>
                     <p className="text-xl text-gray-300 mb-8">
-                        Это интерактивный обзор ключевых сегментов кофейного рынка в Республике Татарстан. Здесь вы найдете ключевые тенденции, игроков и каналы дистрибуции.
+                        Это интерактивный обзор ключевых сегментов кофейного рынка в Республике Армения. Здесь вы найдете ключевые тенденции, игроков и каналы дистрибуции.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <Card accent="default">
@@ -263,7 +263,7 @@ const CoffeeMarketAnalysis: React.FC = () => {
 
             <footer className="text-center p-8 mt-16 border-t border-[#c8a15a]/50">
                 <p className="text-gray-500">
-                    Интерактивный отчет о кофейном рынке Татарстана.
+                    Интерактивный отчет о кофейном рынке Армении.
                 </p>
             </footer>
         </div>
